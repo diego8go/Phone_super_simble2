@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Web</title>
+    <style>
+        body {
+            background-color: #f7f7f7; /* Fondo entre gris y blanco */
+            margin: 0;
+            padding: 0;
+        }
+
+        #header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 4px;
+        }
+
+        #left-image {
+            max-width: 8%;
+            margin-top: 10px; /* Doble de espacio desde el borde superior */
+        }
+
+        #right-image {
+            max-width: 16%;
+            margin-top: 10px; /* Doble de espacio desde el borde superior */
+        }
+
+        #top-rectangle {
+            background-color: white;
+            border: 1px solid black;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+            margin: 10px auto; /* Centro del ancho de la pantalla */
+            padding: 10px;
+            max-width: 62%; /* Un 10% más ancho que antes */
+            text-align: center; /* Centrar botones */
+            border-radius: 10px; /* Bordes redondeados */
+        }
+
+        #buttons {
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100%;
+        }
+
+        .button {
+            display: block;
+            margin: 6px;
+            width: 62%; /* Hacer que todos los botones tengan el mismo ancho */
+            padding: 9px;
+            color: white;
+            border: none;
+            cursor: pointer;
+            border-radius: 10px; /* Bordes redondeados */
+        }
+
+        #gray-button {
+            background-color: rgb(154, 154, 154);
+        }
+
+        #red-button {
+            background-color: rgb(182, 1, 1);
+        }
+
+        #blue-button {
+            background-color: rgb(1, 132, 226);
+        }
+
+        #main-image {
+            max-width: 62%; /* Centrado y con márgenes menores */
+            margin: 0 auto; /* Centro de la pantalla */
+            display: block; /* Asegura que la imagen se muestre como bloque */
+        }
+
+        #bottom-bar {
+            background-color: white;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 50px;
+        }
+
+        .bottom-image {
+            max-width: 100%; /* Ocupar el máximo ancho posible sin distorsionar */
+            max-height: 100%; /* Ocupar el máximo alto posible sin distorsionar */
+            object-fit: contain; /* Mantiene la relación de aspecto y ajusta la imagen */
+        }
+    </style>
+</head>
+<body>
+    <div id="header">
+        <img id="left-image" src="LogoMujSeguras.png" alt="Imagen Izquierda">
+        <img id="right-image" src="Icono_Perfil.png" alt="Imagen Derecha">
+    </div>
+
+    <div id="top-rectangle">
+        <div id="buttons">
+            <button class="button" id="gray-button">MI PERFIL</button>
+            <button class="button" id="red-button">EMERGENCIA</button>
+            <button class="button" id="blue-button">DENUNCIA</button>
+        </div>
+    </div>
+
+    <img id="main-image" src="Pantalla_iinf2.png" alt="Imagen Principal">
+
+    <div id="bottom-bar">
+        <img class="bottom-image" src="SSEdoMex.png" alt="Imagen 1">
+        <img class="bottom-image" src="C5.png" alt="Imagen 2">
+        <img class="bottom-image" src="FiscaliaGJ.png" alt="Imagen 3">
+    </div>
+</body>
+</html>
